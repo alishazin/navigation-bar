@@ -1,0 +1,64 @@
+:root {
+    --primary: #04002c;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+#nav-bar {
+    width: 75px;
+    height: 600px;
+    padding: 15px 12px;
+    border-radius: 15px;
+    background-color: var(--primary);
+    transition: width 0.8s;
+}
+#nav-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 5px 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.219), rgba(255, 255, 255, 0) 100%);
+    position: relative;
+}
+#nav-cover div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+#nav-cover div:last-child {
+    justify-content: center !important;
+    position: absolute;
+    bottom: 0;
+    cursor: auto;
+}
+#nav-cover div i {
+    color: white;
+    font-size: 25px;
+    transition: font-size 0.2s, color 0.1s, padding 0.2s;
+    padding-left: 12px;
+}
+#nav-cover div:last-child i {
+    transition: transform 1s, font-size 0.2s, color 0.2s;
+    padding-left: 0;
+}
+#nav-cover .icon-div:hover i, #nav-cover div:last-child i:hover  {
+    font-size: 30px;
+    cursor: pointer;
+}
+#nav-cover .icon-div:hover i {
+    padding-left: 10px;
+}
+#nav-cover .icon-div:active i, #nav-cover div:last-child i:active {
+    color: #adadad;
+}
+#nav-cover .icon-div span {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding-left: 15px;
+}
